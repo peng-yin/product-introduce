@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<style>
+#menu { padding: 0;margin: 0;  position: fixed; left: 0; top:20px; list-style-type: none; z-index: 70;text-align: center;width: 100%;
+}
+#menu li {  font-size: 14px;display: inline-block;}
+#menu a {
+	transition: .5s;
+	float: left; padding: 10px; background-color:rgba(255,255,255,.5); color: #333; text-decoration: none;
+	position: relative;
+
+}
+#menu a span{
+	position: relative;z-index: 2;
+}
+#menu a:after{
+	content:'';
+	position: absolute;
+	bottom: 0;z-index: 1;left: 0;width: 100%;height: 0;background-color: rgba(0,0,0,1);overflow: hidden;transition: .5s;
+}
+#menu .active a {
+	color: #fff;
+}
+#menu .active a:after{
+	height: 100%;
+}
+.section { font: 18px "Microsoft JHenghei"; color: #fff;padding: 50px;}
+.con-img {overflow: hidden;}
+.con-img li{width:18%;margin-left:10px;list-style: none;float: left;}
+.con-img li img{width: 100%;height: 100%;}
+.big{font-size: 60px;letter-spacing: 20px;}
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script>
+$(function(){
+	$('#sucaihuo').fullpage({
+		sectionsColor: ['#1bbc9b', '#4BBFC3', '#1bbc9b', '#4BBFC3','#1bbc9b', '#4BBFC3', '#1bbc9b'],
+		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],
+		menu: '#menu'
+	});
+});
+</script>
+</head>
+
+<body>
+
+<ul id="menu">
+	<li data-menuanchor="page1" class="active"><a href="#page1"><span>XX通</span></a></li>
+	<li data-menuanchor="page2"><a href="#page2"><span>XX通综述</span></a></li>
+	<li data-menuanchor="page3"><a href="#page3"><span>XX通主要建设内容</span></a></li>
+	<li data-menuanchor="page4"><a href="#page4"><span>XX通服务对象</span></a></li>
+	<li data-menuanchor="page5"><a href="#page5"><span>XX通进展成果</span></a></li>
+	<li data-menuanchor="page6"><a href="#page6"><span>XX通下一步推进计划</span></a></li>
+	<li data-menuanchor="page7"><a href="#page7"><span>XX通实施后效果</span></a></li>
+</ul>
+
+<div id="sucaihuo">
+	<div class="section">
+		<div class="content">
+			<ul  class="con-img">
+				<li><img src="images/index (1).png"></li>
+				<li><img src="images/index (2).png"></li>
+				<li><img src="images/index (3).png"></li>
+				<li><img src="images/index (4).png"></li>
+				<li><img src="images/index (5).png"></li>
+			</ul>
+			<h3 class="big">XX通在手，城市生活无忧!</h3>
+		</div>
+	</div>
+	<div class="section">
+		<div class="content">
+			<h3>一、“XX通”综述：</h3>
+			<p>XX通：全称“北京市市民社会服务一卡通”。它并不是一张实体卡片，而是为北京市市民提供政府公共服务和个人信用管理的集合应用，属于卡证同存、虚实结合。
+			</p>
+			<p>
+		    “XX通”卡是一个具有唯一性编号为载体的基于政府公共服务的集合体，融合现有社保、交通、公安、医疗、教育等行业卡证应用，集金融、公交、养老、缴费等功能于一身，解决多卡并存，公共服务分散的问题，最终实现凭号无卡使用的模式，使“记录一生、信用一生、服务一生”的理念真正落地。现已发放的社保卡、公交卡、学生卡、就诊卡、健康卡、居住证等市民卡证信息，均将按照XX通应用标准逐步进行业务融合，最终实现“一卡多用、多卡融合”。
+			</p>
+		</div>
+	</div>
+	<div class="section">
+		<div class="content" style="font-size: 15px;">
+					<h3>二、XX通主要建设内容</h3>
+					<p>1、统一实名认证平台
+			XX通利用公安、运营商和银行等三大认证服务体系，形成“公安+运营商”、“公安+运营商+银行”、“公安+运营商+银行+线下认证”的三级认证体系，为政府及市民提供分级的实名认证服务。
+			XX通作为政府为民服务的公共基础设施，以“实名认证预约、网上审批预审跟踪、政务服务交互”为基础，打造“指尖上”的审批，实现“面对面”问政、“心连心”服务的新延伸，逐步实现”一号申请、一网预约、一窗办理”的目标，以互联网+政务服务支撑简政放权工作，提高了政务公共服务水平。
+			</p>
+			<p>
+			2、归集卡证信息，实现一卡多能
+			政府部门依据“XX通”标准，以“XX通”编号为载体，整合身份证件、社保、健康、教育、交通等各类信息，建立公民实名认证的“电子证照”，推动政府部门、公共事业单位、社会机构的资源和数据进行整合互通，打破数据共享不畅的状态，让居民和企业“少跑腿、好办事、不添堵”，实现让“信息跑”不让“居民跑”，支撑政府辅助决策和社会信用体系建设，提速信用社会的建设进程，实现“记录一生、服务一生、管理一生”的市民精准化服务管理目标。
+			市民使用“XX通”将可以告别“一事一卡、一人多卡、使用不便”的烦恼，解决了个人持卡数量只增不减、公民信息重复填报、公共数据分散不一、个人隐私泄漏渠道增多等诸多问题，让市民充分享受到北京城市综合服务和信息化带来的便利，改进百姓的生活品质，逐步提升生活的幸福感。
+			</p>
+			<p>
+			3、构建多领域便民服务体系
+			通过“XX通”应用，逐步将医疗卫生、养老助残、交通等多领域信息和应用汇聚，将虚拟卡与实体卡应用的信息通过后台统一起来，方便市民及时掌握自身用卡情况，查看个人证照，管理卡证信息。通过与第三方应用联合提供应用服务，在一定区域内实现百姓通过“XX通”应用即可缴费消费等功能，逐步达到“一个应用在手，城市生活无忧”的目标。通过“XX通”的推广，以及对数据多维度、全方位的挖掘，逐步实现数据的动态化、评估的立体化，转变政府服务理念，最大程度利企便民，切实让市民和企业感受到北京“互联网+政务服务”的魅力。
+			</p>
+		</div>
+	</div>
+	<div class="section">
+		<div class="content">
+			<h3>三、XX通服务对象</h3>
+			<p>所有在京工作、居住、旅行、消费的人群。</p>
+		</div>
+	</div>
+	<div class="section">
+		<div class="content">
+			<h3>四、XX通进展成果</h3>
+			<p>截止到2016 年10月底，已累计发放XX通卡865.4万张，覆盖医疗、残疾互助、养老、健康等领域。其中京医通卡总发卡约718万张，残疾人证总发卡约48.5万张，养老卡总发卡约56.9万张，老年优待卡发卡约20万张，居民健康卡发放约4万张，公安居住证发放约18万张。
+			</p>
+			<p>
+			XX通-养老助残卡为老年人总共发放养老补贴约4.79亿元；为持卡老人提供百货购物，老年餐，家政服务，生活照料，医药医疗，日间照料，养老机构，文化娱乐，社区便利店服务等909.2万次。
+			</p>
+			<p>
+			各级残联和政府部门通过卡片向残疾人发放助残券、护理补贴、生活补贴、节日慰问等各种福利补贴约6亿元；残疾人刷卡免费乘公交5000多万人次；刷卡消费50万余笔。
+			</p>
+		</div>
+	</div>
+	<div class="section">
+		<div class="content">
+			<h3>五、XX通下一步推进计划</h3>
+			<p>2017年，XX通重点建设XX通数据服务平台，整合更多委办局卡证信息数据、政务服务数据，连接更多的社会服务，综合利用互联网、大数据、物联网、移动互联等新技术，向市民提供更好、更快、更便捷的XX通服务。
+			</p>
+			<p>
+			2017年，重点建设北京城市副中心（通州）XX通试点工程，连接公安、民政、计生委、残联四个与民生关联密切的委办局，完成居住证、出入境许可、港澳通行证、身份证、驾驶证、消防许可证、婚姻登记证、收养证、社会救助证、慈善捐助证、计生证、残疾人证、惠残服务等18项卡证信息的整合，在3到5个社区进行XX通便民服务试点推广。全年实现600万张卡数据整合、600万张证照数据整合、500万次市民认证、500万人次XX通APP下载。
+			</p>
+			<p>
+			2018年整合全市36个委办局卡证数据信息，连接50余项政务服务和社会服务。全年实现1200万张卡数据整合、1200万张证照数据整合、1000万次市民认证、700万人次XX通APP下载。
+			</p>
+			<p>
+			2019年整合全市所有委办局卡证数据信息，连接上百项政务服务和社会服务。全年完成2500万张卡数据整合、2500万张证照数据整合、2000万次市民认证、900万人次XX通APP下载。
+			</p>
+		</div>
+	</div>
+	<div class="section">
+		<div class="content">
+			<h3>六、XX通实施后效果</h3>
+			<p>“XX通”建成后，政府部门可逐步对本市现有社保卡、交通卡、社会服务卡等卡类信息和应用，对驾驶证、出入境登记证、港澳通行证、婚姻登记证等证照类信息和应用进行融合，解决多卡并存、公共服务分散的问题。北京各委办局、事业单位、公共服务中心通过一个平台即可共享数据资源，简化办公流程，提高工作效率，加强部门间协作，节约大量的人力、物力，减少财政经费投入，提高投资效益。
+			</p>
+			<p>
+			市民通过一个“XX通”即可畅享包括在”城市交通、医院挂号、社保办事等”在内的政府服务、社会服务、公益服务，方便地管理和使用个人的卡证信息，使用实名认证服务，切实感受到北京“互联网+政务服务”的魅力。
+			对各企业、社会团体、公益组织等机构可通过一个“XX通”与市民和消费者实现直接良性的沟通，为市民提供更好的服务，实现企业项目审批，提高运营效率，最终实现政府、市民、企业的三方共赢。
+			</p>
+			<p>
+			XX通将卡证信息、政府服务和社会服务整合到了一个统一的APP，实现了个人卡证信息的综合管理、实现了服务的汇聚， 方便市民办理个人社会事务，提升政府公共管理和服务效能，建成覆盖全市的整体联动、部门协同统筹、一网办理的“互联网+政务服务”体系，让企业和群众办事更方便、更快捷、更有效率，
+			</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
